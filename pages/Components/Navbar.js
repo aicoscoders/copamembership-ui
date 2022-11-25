@@ -9,8 +9,8 @@ export default function Navbar() {
   return (
     <div className={styles.topnav}>
         <Link href='/' className={router.pathname=="/"?styles.active:''}>Home</Link>
-        <Link href='/users' className={router.pathname=="/users"? styles.active:''}>Users</Link>
-        <Link href='/usergql' className={router.pathname=="/usergql"? styles.active:''}>usergql</Link>
+        {/* <Link href='/users' className={router.pathname=="/users"? styles.active:''}>Users</Link> */}
+        <Link href='/user' className={router.pathname=="/usergql"? styles.active:''}>User</Link>
 
     </div>
   )

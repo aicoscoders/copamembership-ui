@@ -8,6 +8,7 @@ export async function getServerSideProps(){
         query: gql`
         query{
             users{
+                id
                 name
                 email
             }
