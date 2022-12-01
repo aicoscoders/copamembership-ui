@@ -1,11 +1,11 @@
 import { gql } from "@apollo/client";
 import { API_URL_GQL } from "../constants/constant";
-import UserSecond from "./UserSecond";
+import User from "./User";
 
 
 export async function getServerSideProps(context){
     const id= context.params.id;
-    const {data} = await UserSecond.query({
+    const {data} = await User.query({
         query: gql`
         query(
             $id: ID
