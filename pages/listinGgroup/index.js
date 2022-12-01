@@ -27,11 +27,11 @@ export default function listingGroup({displaygroups}) {
     <div className={styles.container}>
       <div className={styles.userlist}>
         {
-          displayusers && displayusers.map((displaygrp)=>(
-            <div key={displaygrp.id}>
-              {displaygrp.name}
-            </div>
-          ))
+          // displayusers && displayusers.map((displaygrp)=>(
+          //   <div key={displaygrp.id}>
+          //     {displaygrp.name}
+          //   </div>
+          // ))
         }
         Usergroup
       </div>
