@@ -1,5 +1,5 @@
 import { useQuery,gql } from "@apollo/client";
-import User from "../user/User";
+import User from "../users/Clients";
 import styles from "../../styles/User.module.css";
 
 export async function getServerSiteProps(){

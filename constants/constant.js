@@ -1,0 +1,1 @@
+export const API_URL_GQL = "http://192.168.1.93:5000/graphql/";
