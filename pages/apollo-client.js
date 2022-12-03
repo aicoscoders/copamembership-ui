@@ -1,12 +1,13 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { API_URL_GQL } from "../constants/constant";
 
-const User = new ApolloClient({
+const client = new ApolloClient({
   uri: API_URL_GQL,
   cache: new InMemoryCache(),
   headers: {
-    refferer: "http://localhost:3001/",
+    "Access-Control-Allow-Origin": "*"
+
   },
 });
 
-export default User;
+export default client;
