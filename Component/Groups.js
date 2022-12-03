@@ -1,6 +1,6 @@
 import { useQuery, gql } from "@apollo/client";
 
-const QUERY = gql`
+ export const QUERY = gql`
 query display{
     groups{
         id
@@ -23,13 +23,13 @@ export default function Groups() {
         return null;
     }
 
-    const groups = data.groups.slice(0,5);
+    const groups = data.groups.slice(0,10);
 
   return (
     <div className="">
         {groups.map((group)=>(
             <div key={group.id}>
-                <h3>{group.name}</h3>
+                <h1>{group.name}</h1>
                 <p>{group.description}</p>
             </div>
         ))
