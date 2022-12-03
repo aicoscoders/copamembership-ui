@@ -11,7 +11,6 @@ export default function Navbar() {
         <Link href='/' className={router.pathname=="/"?styles.active:''}>Home</Link>
         <Link href='/users' className={router.pathname=="/users"? styles.active:''}>Users</Link>
         <Link href='/Groups' className={router.pathname=="/Groups"? styles.active:''}>Groups</Link>
-
     </div>
   )
 }
