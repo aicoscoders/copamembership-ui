@@ -1,4 +1,4 @@
-import styles from '../../styles/Navbar.module.css';
+import styles from "../styles/Navbar.module.css";
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
@@ -9,8 +9,8 @@ export default function Navbar() {
   return (
     <div className={styles.topnav}>
         <Link href='/' className={router.pathname=="/"?styles.active:''}>Home</Link>
-        <Link href='/user' className={router.pathname=="/user"? styles.active:''}>User</Link>
-        <Link href='/listinGgroup' className={router.pathname=="/listinGgroup"? styles.active:''}>User Group</Link>
+        <Link href='/users' className={router.pathname=="/users"? styles.active:''}>Users</Link>
+        <Link href='/Groups' className={router.pathname=="/Groups"? styles.active:''}>Groups</Link>
 
     </div>
   )

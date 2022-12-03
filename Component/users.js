@@ -11,7 +11,6 @@ const QUERY = gql`
     }
   
 `
-import React from 'react'
 
 export default function users() {
     const {data, loading, error} = useQuery(QUERY);
@@ -23,14 +22,14 @@ export default function users() {
         return null;
     }
 
-    const users = data.users.slice(0,4);
+    const users = data.users.slice(0,10);
 
   return (
     <div className="">
         {users.map((user)=>(
             <div key={user.id} className="">
                 <h3>{user.name}</h3>
-                <p>{user.email}</p>
+                <p>{user.email} - {user.phone}</p>
             </div>
         ))
         }
